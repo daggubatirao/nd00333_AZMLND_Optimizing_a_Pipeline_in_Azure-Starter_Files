@@ -76,5 +76,5 @@ def main():
     os.makedirs('outputs', exist_ok=True)
     joblib.dump(value=model, filename='outputs/bankmarketing_model.pkl')
 
-if __name__ == '__main__':bankmarketing_model
+if __name__ == '__main__':
     main()
