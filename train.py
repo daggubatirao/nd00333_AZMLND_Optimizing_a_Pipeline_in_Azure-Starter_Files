@@ -74,7 +74,7 @@ def main():
     run.log('AUC', np.float(auc))
 
     os.makedirs('outputs', exist_ok=True)
-    joblib.dump(value=model, filename='outputs/diabetes_model.pkl')
+    joblib.dump(value=model, filename='outputs/bankmarketing_model.pkl')
 
-if __name__ == '__main__':
+if __name__ == '__main__':bankmarketing_model
     main()
