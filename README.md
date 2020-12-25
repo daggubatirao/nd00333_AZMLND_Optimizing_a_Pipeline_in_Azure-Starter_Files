@@ -30,5 +30,5 @@ The AutoML dataguard feature indicates that the data is imbalanced. the smallest
 AutoML can identify some of the best performing machine learning models quickly, which then can be used to finetune using processed data and searching hyperparamters using those models.
 
 ## Proof of cluster clean up
-
+![Cluster Delete](cluster_delete.PNG)
 
