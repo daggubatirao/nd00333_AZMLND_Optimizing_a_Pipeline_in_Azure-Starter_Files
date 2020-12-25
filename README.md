@@ -15,7 +15,7 @@ AzureML supports hyperparameter tunig using hyperdrive package. Using hyperdrive
 
 In this experiment, RandomSampling was used to sample max_iter and C paramters. max_iter uses discrete list [500, 1000, 5000] and C uses discrete list [100, 10, 5, 1.0, 2]. The Random Sampling selects combination max_iter and C. Random Sampling supports early termination of low-performance runs. 
 
-the hyperdrive support early termination using a policy, which improves the performance. In this experiement, BanditPolicy was used to terminate runs where the primary metric is not within the specified slack factor/slack amount compared to best performing run.
+The hyperdrive support early termination using a policy, which improves the performance. In this experiement, BanditPolicy was used to terminate runs where the primary metric is not within the specified slack factor/slack amount compared to best performing run.
 
 ## AutoML
 Azure Maching Learning support automatic training and comparison of maching learning models using AutoML. AutoML preprocessed the data, trains different models and ranks the models based on user selected metric.  In this experiment, AutoML identified VotingEnsemble.
