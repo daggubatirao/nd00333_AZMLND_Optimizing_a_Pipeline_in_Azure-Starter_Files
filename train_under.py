@@ -88,7 +88,7 @@ def main():
     auc = roc_auc_score(y_test,y_scores[:,1])    
     run.log('AUC', np.float(auc))
 
-    f1score = f1_score(y_test,y_scores,average='weighted')
+    f1score = f1_score(y_test, model.predict(x_test),average='weighted')
     run.log('F1_Score', np.float(f1score))
 
     os.makedirs('outputs', exist_ok=True)
